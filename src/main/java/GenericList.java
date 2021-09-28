@@ -11,9 +11,9 @@ public abstract class GenericList<T> implements Iterable<T> {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public abstract class Node<T> {
-		T data;
-		Node<T> next;
+	public class Node<T> {
+		public T data;
+		public Node<T> next;
 		
 		public Node (T val) {
 			
@@ -118,9 +118,9 @@ public abstract class GenericList<T> implements Iterable<T> {
 		
 	}
 	
-	public void setHead(Node<T> head) {
+	public void setHead(Node<T> val) {
 		
-		head = this.head;
+		head = val;
 	}
 	
 	public ListIterator<T> listIterator ( int index) {
